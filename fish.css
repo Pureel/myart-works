@@ -1,6 +1,7 @@
 html{
   font-family: "Sour Gummy", sans-serif;
   font-size: 19px;
+  scroll-behavior: smooth;
 }
 img{
   width: 100px;
@@ -119,6 +120,7 @@ form input{
 .pr h3{
   background-color: #ffcc96;
   height: 2rem;
+  border-radius: 12px;
 }
 .pr p{
   background-color: #28FFDE;
@@ -149,59 +151,36 @@ footer .futar{
 }
 footer{ 
   margin-top: 8px;
-  background-color: #c4eeff
+  background-color: #c4eeff;
 }
-@media (max-width: 540px){
-  header{
-    flex-direction: column;
-    height: 230px;
-  }
-  #imgc{
-    width: 30%;
-    margin: 0 auto;
-  }
-  #header-img{
-    width: 100%;
-    position: relative;
-    z-index: -2; 
-  }
-  #nav-bar{
-    width: 60%;
-    margin: -10px auto;
-    position: relative;
-    top: -30px;
-  }
-  .nav-bar-ul{
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  .nav-bar-ul li{
-     margin: 0 auto;
-     text-align: center;
-  }
-  .fowl{
-    flex-direction: column;
-  }
-  .wsi{
-    width: 100%;
-    margin-bottom: 0px;
-  }
-  .adp{
-    margin-top: 0px;
-  }
-}
-@media(max-width: 768px){
+
+@media(max-width: 760px){
   html{
-    font-size: 17px;
+    font-size: 16px;
+  }
+  header{
+    height: calc(max-content + 1.2rem);
   }
   #email{
-    width: 70%;
+    width: 80%;
   }
   #submit{
-    width: 55%;
+    width: 70%;
+  }
+  #Features-of-Our-Services{
+    width: 100%;
+  }
+  .fowl{
+    width: 100%;
+  }
+  .imgcc{
+    width: 20%;
+  }
+  .adp{
+    width: 80%; 
   }
   .vid-wrapper{
-    width: 90%;
+    width: 100%;
     position: relative;
     height: 0;
     padding-bottom: 56.25%;
@@ -217,7 +196,7 @@ footer{
     left: 0;
   }
   .futa p{
-    width: 50%;
+    width: 75%;
   }
 }
 @media (max-width: 860px){
